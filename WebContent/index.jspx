@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+ 
+
+    <f:view>
+        <body>
+            <h:form id="form">
+                <br />
+                <br />
+                <center>
+                    <h:commandLink target="_blank"
+                        action="#{relatorioBacking.geraRelatorioCliente}"
+                        value="Gerar relatório de cliente." />
+                </center><br/>
+                <center>
+                    <h:commandLink target="_blank"
+                        action="#{relatorioBacking.geraRelatorioFilme()}"
+                        value="Gerar relatório de filme." />
+                </center><br/>
+                <center>
+                    <h:commandLink target="_blank"
+                        action="#{relatorioBacking.geraRelatorioVendedor()}"
+                        value="Gerar relatório de vendedor." />
+                </center>
+            </h:form>
+        </body>
+    </f:view>
+</jsp:root>

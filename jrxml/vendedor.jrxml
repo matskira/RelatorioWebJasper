@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="vendedor" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0dd5086f-c8e6-4513-bacb-a9329ed6e0cf">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="titulo" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="areaVenda" class="java.lang.String"/>
+	<field name="salario" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="184" y="17" width="187" height="45" uuid="ef8473f2-5fc6-4d6b-a2d4-45938f9d497c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titulo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="25" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="13" width="106" height="23" uuid="42fcfe5b-f080-4d2c-ab80-595926e52d96"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="13" width="149" height="23" uuid="9d63d130-34e7-4706-8d96-c549ff6c2899"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[ÁREA DE VENDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="13" width="106" height="23" uuid="a5e86a2f-ab22-4a97-8462-3aaa3ee325af"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[SALÁRIO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="49" splitType="Stretch">
+			<textField>
+				<reportElement x="6" y="14" width="100" height="20" uuid="aaab9381-2370-4d79-8b20-ce6a47154267"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="14" width="149" height="20" uuid="2b81b7b7-c360-49b2-bff3-70c68bc58a5b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{areaVenda}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="14" width="106" height="20" uuid="500e7341-b4d5-4d79-b9bb-ca73bed529d6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{salario}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="45" width="555" height="1" uuid="e4a1d249-6695-4596-bf63-fbce0b571fb5"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="371" y="16" width="149" height="20" uuid="bb756a6d-7d1d-40e7-be34-63e547b39edb"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="24" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="19" splitType="Stretch"/>
+	</summary>
+</jasperReport>

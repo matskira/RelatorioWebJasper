@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:*" PATH="*" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:*:0" NAME="item" PATH="*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="index::#index.jspx" NAME="output"
+    PATH="/index.jspx" TARGET="rules:#index.jspx" TITLE="index" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="exibeRelatorio::#relatorio.jspx"
+    NAME="output1" PATH="/relatorio.jspx" TARGET="rules:#relatorio.jspx"
+    TITLE="exibeRelatorio" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#relatorio.jspx" PATH="/relatorio.jspx"
+  SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#index.jspx" PATH="/index.jspx"
+  SHAPE="256,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
